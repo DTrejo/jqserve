@@ -7,7 +7,7 @@ var sys = require('sys')
   , http = require('http')
   , querystring = require('querystring')
   , PORT = 8080
-  , jqserve = require('./jqserve');
+  , jqserve = require(__dirname + '/jqserve');
 
 // Firin up our in-built node server
 var httpServer = http.createServer(function (request, response) {
