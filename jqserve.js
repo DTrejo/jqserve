@@ -10,7 +10,7 @@ var util = require('sys')
   , fs = require('fs')
   , jsdom  = require('jsdom').jsdom
   , ns = require('node-static')
-  , fileServer = new ns.Server(__dirname + '/public', { cache: 7200, headers: {'X-Hello':'World!'} });
+  , fileServer = new ns.Server('./public', { cache: 7200, headers: {'X-Hello':'World!'} });
 
 // takes a path and a function,
 // reads file at that path, makes a window out of it.
