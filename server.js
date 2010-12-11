@@ -7,7 +7,7 @@ var sys = require('sys')
   , http = require('http')
   , querystring = require('querystring')
   , PORT = 8080
-  , jqserve = require(__dirname + '/jqserve');
+  , jqserve = require('./jqserve');
 
 // Firin up our in-built node server
 var httpServer = http.createServer(function (request, response) {
@@ -23,7 +23,7 @@ var httpServer = http.createServer(function (request, response) {
         // OMG MA SERVA IS TEMPLATIN WITH JQUERY!
         //
         jqserve(request, response, 'index.html', function(err, $) {
-          
+          if (err) console.log(err);
           // write jquery to your heart's content 
           $('.name').html('<b>David Trejo<b>');
           $('body').append($('<h1/>').text('CHECK THE FRIGGIN HTML FILE AND THIS SHIT WON\'T BE THERE!'))
