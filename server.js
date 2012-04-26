@@ -2,7 +2,7 @@
 // Example of how to use jqserve with the built-in 
 // node http server and nothing too fancy.
 // 
-var sys = require('sys')
+var util = require('util')
   , url = require('url')
   , http = require('http')
   , querystring = require('querystring')

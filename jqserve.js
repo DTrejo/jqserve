@@ -8,7 +8,7 @@
 
 module.exports = jqserve;
 
-var util = require('sys')
+var util = require('util')
   , fs = require('fs')
   , jsdom  = require('jsdom').jsdom
   , ns = require('node-static')
