@@ -8,9 +8,9 @@
     "lib": ""
   },
   "dependencies": {
-    "jquery": "~1.5.1",
-    "node-static": "0.5.6",
-    "jsdom": "~0.2.0"
+    "node-static": "~0.5.9",
+    "jquery": "~1.6.3",
+    "jsdom": "~0.2.14"
   },
   "engines": {
     "node": "*"
